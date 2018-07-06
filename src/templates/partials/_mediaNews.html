@@ -1,0 +1,47 @@
+{% set
+  mediaNews = [
+    {
+      video: "#",
+      img: "img/bar-1.jpg",
+      title: "CNN could not verify the authenticity",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage."
+    },
+    {
+      video: "#",
+      img: "img/bar-2.jpg",
+      title: "Reid eyes deal to end stalemate over funding",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage. "
+    },
+    {
+      video: "#",
+      img: "img/bar-3.jpg",
+      title: "CNN could not verify the authenticity",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage."
+    }
+  ]
+%}
+
+<div class="mediaNews">
+  <h3 class="mediaNews__title">
+    Hottest video
+  </h3>
+  <ul class="mediaNews__list">
+    {% for item in mediaNews %}
+      <li class="mediaNews__item">
+        <a href="{{item.video}}" class="mediaNews__img">
+          <img src="{{item.img}}" alt="">
+          <img class="mediaNews__img-play" src="img/play.png" alt="">
+        </a>
+        <h4 class="mediaNews__item-title">{{item.title}}</h4>
+        <p>{{item.discr}}
+          <span class="mediaNews__revievs">
+            <span class="mediaNews__revievs-icon">
+              <img src="img/reviev.png" alt="">
+            </span>
+            <span class="mediaNews__revievs-count">12</span>
+          </span>
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

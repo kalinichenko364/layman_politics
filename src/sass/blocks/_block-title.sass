@@ -1,0 +1,44 @@
+.block-title
+	display: flex
+	align-items: center
+	width: 100%
+	background-color: $grey_title
+	+r(320)
+		width: 280px
+		flex-direction: column
+
+	&__left
+		position: relative
+		padding: 6px
+		padding-left: 15px
+		padding-right: 32px
+		font-family: 'Barlow Condensed', sans-serif
+		font-weight: normal
+		font-style: normal
+		color: $white_text
+		font-size: 18px
+		line-height: 1.2
+		text-transform: uppercase
+		background-color: $red
+		+r(320)
+			display: inline-block
+			width: 280px
+			font-size: 14px
+		&:after
+			position: absolute
+			top: 0
+			right: -39px
+			content: ""
+			display: block
+			border: 17px solid transparent
+			border-left: 22px solid $red
+			+r(320)
+				border: none
+
+	&__right
+		padding-left: 37px
+		font-style: normal
+		+r(320)
+			display: inline-block
+			width: 280px
+

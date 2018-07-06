@@ -1,0 +1,26 @@
+{% set
+  secondNav = [
+    {
+      title: "Privacy Policy",
+      href: "#"
+    },
+    {
+      title: "Advertise",
+      href: "#"
+    },
+    {
+      title: "Terms and Conditions",
+      href: "#"
+    }
+  ]
+  %}
+  
+  <nav class="second-nav">
+    <ul class="second-nav__list">
+      {% for item in secondNav %}
+      <li class="second-nav__item">
+        <a href="{{item.href}}" class="second-nav__link">{{item.title}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>

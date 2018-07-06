@@ -1,0 +1,53 @@
+{% set 
+  posts = [ 
+    { 
+      img: "img/post-1.jpg", titleLeft: "In Syria, 'brother of a whore' gets tossed like trash",
+      titleRight: "As crackdowns against anti-government rotesters",
+      discr: "A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit. In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues."
+    }, 
+    { 
+      img: "img/post-2.jpg", titleLeft: "Gruesome video shows Syria brutality", 
+      titleRight: "As crackdowns against anti-government protesters continue across",
+      discr: "In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues. A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit." 
+    } 
+  ] 
+%}
+
+<div class="posts">
+  <ul class="posts__list">
+    {% for item in posts %}
+    <li class="posts__item">
+      <div class="posts__title block-title">
+        <h3 class="block-title__left">
+          {{item.titleLeft}}
+        </h3>
+        <p class="block-title__right">
+          {{item.titleRight}}
+        </p>
+      </div>
+      <div class="posts__content">
+        <img class="posts__img" src="{{item.img}}" alt="">
+        <div class="posts__discr">
+          <p>{{item.discr}}</p>
+          <div class="posts__socials">
+            <div class="posts__revievs">
+              <div class="posts__revievs-icon">
+                <img src="img/reviev.png" alt="">
+              </div>
+              <div class="posts__revievs-count">12</div>
+            </div>
+            <div class="posts__tags">
+              Tags:<span>Italy, Best wine, Spirit, World championship, Eat</span>
+            </div>
+            <div class="posts__share">
+              Share:
+              <img src="img/fb.png" alt="facebook">
+              <img src="img/tt.png" alt="twitter">
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

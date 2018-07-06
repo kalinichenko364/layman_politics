@@ -1,0 +1,45 @@
+{% set
+  cards = [
+    {
+      img: "../../img/img-1.jpg",
+      title: "CNN could not verify the authenticity",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage."
+    },
+    {
+      img: "img/img-2.jpg",
+      title: "How Much Do You Owe
+      For Lunch? You Decide",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage. "
+    },
+    {
+      img: "img/img-3.jpg",
+      title: "Reid eyes deal to end 
+      stalemate over funding",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage."
+    },
+    {
+      img: "img/img-4.jpg",
+      title: "Wall Street on Debt Deal
+      So What?",
+      discr: "The bloodied bodies lay stuffed and tangled in the back of a pickup like garbage."
+    }
+  ]
+%}
+
+<div class="cards">
+  <ul class="cards__list">
+    {% for item in cards %}
+    <li class="cards__item">
+      <img src="{{item.img}}" alt="">
+      <h4 class="cards__title">{{item.title}}</h4>
+      <p>{{item.discr}}</p>
+      <div class="cards__revievs">
+        <div class="cards__revievs-icon">
+          <img src="img/reviev.png" alt="">
+        </div>
+        <div class="cards__revievs-count">12</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

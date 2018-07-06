@@ -1,0 +1,42 @@
+{% set
+mainNav = [
+  {
+    title: "Main street",
+    href: "#"
+  },
+  {
+    title: "Washington dc",
+    href: "#"
+  },
+  {
+    title: "Wall street",
+    href: "#"
+  },
+  {
+    title: "Statewide",
+    href: "#"
+  },
+  {
+    title: "Politics",
+    href: "#"
+  },
+  {
+    title: "Just a bill",
+    href: "#"
+  },
+  {
+    title: "Video",
+    href: "#"
+  }
+]
+%}
+
+<nav class="main-nav">
+  <ul class="main-nav__list">
+    {% for item in mainNav %}
+    <li class="main-nav__item">
+      <a href="{{item.href}}" class="main-nav__link">{{item.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
