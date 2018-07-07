@@ -6,15 +6,50 @@
 .main
   display: flex
   justify-content: space-between
-  +r(900)
+  +r(1024)
+    width: 100%
+  +r(950)
     flex-wrap: wrap
-    width: 725px
-    margin: 0 auto
-  +r(320)
-    width: 280px
+  +r(650)
+    flex-direction: column
 
 .main-content
-  width: 725px
+  width: calc(100% - 215px)
+  +r(950)
+    width: 78%
+  +r(650)
+    width: 100%
 
 .sidebar
   width: 190px
+  +r(950)
+    width: 20%
+  +r(650)
+    width: 100%
+
+.logo-bottom
+	position: relative
+	margin-left: 0
+	bottom: -250px
+
+.navs
+  +r(768)
+    display: none
+    &.active
+      display: flex
+      width: 200px
+      flex-direction: column
+      margin: 0 auto
+
+
+.btn-nav
+	margin-left: auto
+	display: none
+	+r(768)
+    display: block
+    width: 25px
+    height: 25px
+    background-image: url("../img/burger.svg")
+    background-color: transparent
+.btn-nav.active
+  background-image: url("../img/close.svg")

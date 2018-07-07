@@ -2,31 +2,38 @@
 mainNav = [
   {
     title: "Main street",
-    href: "#"
+    href: "#",
+    class:""
   },
   {
     title: "Washington dc",
-    href: "#"
+    href: "#",
+    class:""
   },
   {
     title: "Wall street",
-    href: "#"
+    href: "#",
+    class:"active"
   },
   {
     title: "Statewide",
-    href: "#"
+    href: "#",
+    class:""
   },
   {
     title: "Politics",
-    href: "#"
+    href: "#",
+    class:""
   },
   {
     title: "Just a bill",
-    href: "#"
+    href: "#",
+    class:""
   },
   {
     title: "Video",
-    href: "#"
+    href: "#",
+    class:""
   }
 ]
 %}
@@ -35,7 +42,7 @@ mainNav = [
   <ul class="main-nav__list">
     {% for item in mainNav %}
     <li class="main-nav__item">
-      <a href="{{item.href}}" class="main-nav__link">{{item.title}}</a>
+      <a href="{{item.href}}" class="main-nav__link {{item.class}}">{{item.title}}</a>
     </li>
     {% endfor %}
   </ul>

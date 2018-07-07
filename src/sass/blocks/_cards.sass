@@ -3,9 +3,11 @@
   &__list
     display: flex
     justify-content: space-between
-    +r(320)
+    flex-wrap: wrap
+    +r(693)
+      justify-content: space-around
+    +r(400)
       flex-direction: column
-      align-items: center
 
   &__item
     display: flex
@@ -15,8 +17,11 @@
     padding-bottom: 0
     background-color: $white
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14)
-    +r(320)
+    +r(950)
       margin-bottom: 10px
+    +r(400)
+      width: 100%
+      justify-content: center
 
   &__title
     margin-top: 15px

@@ -1,7 +1,7 @@
 body
 	position: relative
-	min-height: 1775px
 	padding-top: 33px
+	padding-bottom: 300px
 	background: url(../img/background-body-img.png) no-repeat, url(../img/background-body.jpg)
 	background-size: 100%, auto
 	font-family: georgia
@@ -12,10 +12,6 @@ body
 	color: $blue_text
 	+r(1024)
 		padding-top: 0
-	+r(900)
-		min-height: 2000px
-	+r(320)
-		min-height: 4200px
 
 .wrapper
 	width: 1000px
@@ -28,20 +24,5 @@ body
 .container
 	width: 940px
 	margin: 0 auto
-.container
-  +r(900)
-    width: 840px
-.container
-	+r(768)
-		width: 725px
-.container
-	+r(320)
-		width: 280px
-
-.logo-bottom
-	position: absolute
-	margin-left: 0
-	bottom: 150px
-  
-.btn-nav
-	margin-left: auto
+	+r(1024)
+		width: calc(100% - 40px)

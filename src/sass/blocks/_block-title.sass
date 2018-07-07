@@ -3,8 +3,7 @@
 	align-items: center
 	width: 100%
 	background-color: $grey_title
-	+r(320)
-		width: 280px
+	+r(650)
 		flex-direction: column
 
 	&__left
@@ -20,9 +19,10 @@
 		line-height: 1.2
 		text-transform: uppercase
 		background-color: $red
-		+r(320)
+		+r(650)
 			display: inline-block
-			width: 280px
+			width: 100%
+			text-align: center
 			font-size: 14px
 		&:after
 			position: absolute
@@ -30,15 +30,18 @@
 			right: -39px
 			content: ""
 			display: block
-			border: 17px solid transparent
-			border-left: 22px solid $red
-			+r(320)
+			border: 16px solid transparent
+			border-left: 23px solid $red
+			+r(955)
 				border: none
 
 	&__right
 		padding-left: 37px
 		font-style: normal
-		+r(320)
+		+r(650)
 			display: inline-block
-			width: 280px
+			width: 100%
+			padding-left: 0
+			text-align: center
+			font-size: 10px
 
