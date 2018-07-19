@@ -3,12 +3,16 @@
     { 
       img: "img/post-1.jpg", titleLeft: "In Syria, 'brother of a whore' gets tossed like trash",
       titleRight: "As crackdowns against anti-government rotesters",
-      discr: "A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit. In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues."
+      discr: "A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit. In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues.",
+      link_fb: "#",
+      link_tt: "#"
     }, 
     { 
       img: "img/post-2.jpg", titleLeft: "Gruesome video shows Syria brutality", 
       titleRight: "As crackdowns against anti-government protesters continue across",
-      discr: "In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues. A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit." 
+      discr: "In a case that could test the bounds of free speech, a former Democratic congressman has been allowed to proceed with his lawsuit against a prominent pro-life group that he claims contributed to his election defeat by spreading falsehoods about his record on abortion issues. A federal judge in Ohio ruled Monday that former Rep. Steve Driehaus' defamation suit.",
+      link_fb: "#",
+      link_tt: "#"
     } 
   ] 
 %}
@@ -26,23 +30,29 @@
         </p>
       </div>
       <div class="posts__content">
-        <img class="posts__img" src="{{item.img}}" alt="">
+        <img class="posts__img" src="{{item.img}}" width="172" height="130" alt="">
         <div class="posts__discr">
           <p>{{item.discr}}</p>
           <div class="posts__socials">
-            <div class="posts__revievs">
-              <div class="posts__revievs-icon">
-                <img src="img/reviev.png" alt="">
+            <a class="posts__socials-link" href="#">
+              <div class="posts__revievs">
+                <div class="posts__revievs-icon">
+                  <img src="img/reviev.png" alt="">
+                </div>
+                <div class="posts__revievs-count">12</div>
               </div>
-              <div class="posts__revievs-count">12</div>
-            </div>
+            </a>
             <div class="posts__tags">
               Tags:<span>Italy, Best wine, Spirit, World championship, Eat</span>
             </div>
             <div class="posts__share">
               Share:
-              <img src="img/fb.png" alt="facebook">
-              <img src="img/tt.png" alt="twitter">
+              <a class="posts__share-link" href="{{item.link_fb}}">
+                <img src="img/fb.png" alt="facebook">
+              </a>
+              <a class="posts__share-link" href="{{item.link_tt}}">
+                <img src="img/tt.png" alt="twitter">
+              </a>
             </div>
           </div>
         </div>

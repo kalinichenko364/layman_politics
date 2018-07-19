@@ -1,13 +1,24 @@
 .cards
 
   &__list
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    +r(693)
-      justify-content: space-around
-    +r(400)
-      flex-direction: column
+    position: relative
+    margin: 0 -8px
+    .btn-slick
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      &--prev
+        left: -5px
+        z-index: 10
+      &--next
+        right: -5px
+        z-index: 10
+    .slick-slide
+      padding: 0 8px
+
+  &__link
+    color: #757575
+    text-decoration: none
 
   &__item
     display: flex
@@ -22,17 +33,28 @@
     +r(400)
       width: 100%
       justify-content: center
+    img
+      margin: 0 auto
 
   &__title
     margin-top: 15px
     margin-bottom: 8px
+    color: #042b38
     font-style: normal
     text-decoration: underline
 
   &__revievs
     display: flex
     margin-left: auto
+    margin-bottom: 5px
+    margin-right: 3px
     font-size: 11px
+    line-height: 1
     color: #757575
     &-icon
+      width: 17px
+      height: 13px
       margin-right: 5px
+      background-image: url('../img/reviev.png')
+    &-count
+      

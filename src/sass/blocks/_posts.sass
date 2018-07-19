@@ -29,7 +29,9 @@
   &__socials
     display: flex
     margin-top: 20px
-    color: $grey_98
+    &-link
+      color: $grey_98
+      text-decoration: none
     +r(320)
       align-items: center
 
@@ -50,7 +52,12 @@
   &__share
     display: flex
     align-items: center
+    &-link
+      width: 20px
+      height: 16px
     img
+      width: 16px
+      height: 16px
       margin-right: 4px
     img:first-child
       margin-left: 12px

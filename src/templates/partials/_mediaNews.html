@@ -25,13 +25,14 @@
   <h3 class="mediaNews__title">
     Hottest video
   </h3>
-  <ul class="mediaNews__list">
+  <div class="mediaNews__list">
     {% for item in mediaNews %}
-      <li class="mediaNews__item">
-        <a href="{{item.video}}" class="mediaNews__img">
-          <img class="mediaNews__img-pic" src="{{item.img}}" width="100%" alt="">
+    <a class="mediaNews__link" href="{{item.video}}">
+      <div class="mediaNews__item">
+        <div class="mediaNews__img">
+          <img class="mediaNews__img-pic" src="{{item.img}}" width="188" height="174" alt="">
           <img class="mediaNews__img-play" src="img/play.png" alt="">
-        </a>
+        </div>
         <h4 class="mediaNews__item-title">{{item.title}}</h4>
         <p>{{item.discr}}
           <span class="mediaNews__revievs">
@@ -41,7 +42,8 @@
             <span class="mediaNews__revievs-count">12</span>
           </span>
         </p>
-      </li>
+      </div>
+    </a>
     {% endfor %}
-  </ul>
+  </div>
 </div>
