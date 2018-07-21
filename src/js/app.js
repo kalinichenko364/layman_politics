@@ -15,7 +15,7 @@ $('.cards__list').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   pauseOnHover: true,
   responsive: [
@@ -37,10 +37,8 @@ $('.cards__list').slick({
         slidesToShow: 1
       }
     }
-  ]
-  ,
-  prevArrow: '<button class="btn-slick btn-slick--prev" type="button"><img src="img/arrow-prev.svg"></button>'
-  ,
+  ],
+  prevArrow: '<button class="btn-slick btn-slick--prev" type="button"><img src="img/arrow-prev.svg"></button>',
   nextArrow: '<button class="btn-slick btn-slick--next" type="button"><img src="img/arrow-next.svg"></button>'
 });
 
