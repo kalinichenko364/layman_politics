@@ -3,10 +3,14 @@
   &__list
     position: relative
     margin: 0 -8px
+    +r(950)
+      margin: 0
     .btn-slick
+      display: flex
       position: absolute
       top: 50%
       transform: translateY(-50%)
+      background: transparent
       &--prev
         left: -5px
         z-index: 10
@@ -14,40 +18,64 @@
         right: -5px
         z-index: 10
     .slick-slide
-      padding: 0 8px
+      padding: 8px
 
   &__link
+    width: 24%
     color: #757575
     text-decoration: none
 
   &__item
     display: flex
     flex-wrap: wrap
-    width: 170px
-    padding: 18px
+    padding: 15px
     padding-bottom: 0
     background-color: $white
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14)
+    &:hover
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3)
+      .cards__img
+        transform: scale(1.2)
     +r(950)
       margin-bottom: 10px
     +r(400)
       width: 100%
       justify-content: center
-    img
-      margin: 0 auto
+
+  &__media
+    width: 100%
+    height: 118px
+    overflow: hidden
+    +r(768)
+      height: 200px
+    +r(550)
+      height: 118px
+    +r(380)
+      height: 200px
+  
+  &__img
+    width: 100%
+    height: 100%
+    +cover
+    transition: 1s
 
   &__title
-    margin-top: 15px
+    margin: 0 4px
+    margin-top: 13px
     margin-bottom: 8px
     color: #042b38
     font-style: normal
     text-decoration: underline
 
+  p
+    margin: 0 4px
+
   &__revievs
     display: flex
     margin-left: auto
-    margin-bottom: 5px
-    margin-right: 3px
+    margin-top: -5px
+    margin-bottom: 8px
+    margin-right: -3px
     font-size: 11px
     line-height: 1
     color: #757575
@@ -56,5 +84,3 @@
       height: 13px
       margin-right: 5px
       background-image: url('../img/reviev.png')
-    &-count
-      

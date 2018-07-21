@@ -1,28 +1,38 @@
-body
-	position: relative
-	padding-top: 33px
-	padding-bottom: 300px
-	background: url(../img/background-body-img.png) no-repeat, url(../img/background-body.jpg)
-	background-size: 100%, auto
-	font-family: georgia
-	font-weight: normal
-	font-style: italic
-	font-size: 12px
-	line-height: 1.5
-	color: $blue_text
-	+r(1024)
-		padding-top: 0
-
 .wrapper
-	width: 1000px
+  width: 1000px
   margin: 0 auto
-	margin-left: auto
-	margin-right: auto
-	+r(1024)
-		width: 100%
+  margin-left: auto
+  margin-right: auto
+  +r(1024)
+    width: 100%
 
 .container
-	width: 940px
-	margin: 0 auto
-	+r(1024)
-		width: calc(100% - 40px)
+  width: 940px
+  margin: 0 auto
+  +r(1024)
+    width: calc(100% - 40px)
+
+.out
+  padding-top: 30px
+  padding-bottom: 50px
+  background-color: $grey_bg
+
+.main
+  display: flex
+  justify-content: space-between
+  +r(1024)
+    width: 100%
+  +r(950)
+    flex-wrap: wrap
+  +r(768)
+    flex-direction: column
+
+.main-content
+  width: 77%
+  +r(768)
+    width: 100%
+
+.sidebar
+  width: 20%
+  +r(768)
+    width: 100%

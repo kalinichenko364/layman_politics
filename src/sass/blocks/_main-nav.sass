@@ -7,13 +7,15 @@
       align-items: center
 
   &__item
-    margin-right: 23px
+    margin-right: 10px
     +r(900)
       margin-top: 5px
+      margin-right: 4px
     +r(768)
       margin-right: 15px
 
   &__link
+    padding: 4px 8px
     font-family: 'Barlow Condensed'
     font-style: normal
     font-size: 18px
@@ -27,6 +29,7 @@
       font-size: 18px
     &.active
       background-color: #092f3b
-      padding: 2px 8px
-      box-shadow:  1px 1px 0 #092f3b
-      box-shadow: inset 1px 1px 0 #092f3b
+      box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.1), inset 0.5px 0.9px 1px rgba(0, 0, 1, 0.28)
+    &:hover
+      background-color: #092f3b
+      box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.1), inset 0.5px 0.9px 1px rgba(0, 0, 1, 0.28)

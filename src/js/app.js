@@ -15,18 +15,18 @@ $('.cards__list').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1000,
+  autoplay: false,
+  autoplaySpeed: 2000,
   pauseOnHover: true,
   responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 950,
       settings: {
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 550,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2
       }

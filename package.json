@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "node-sass": "^4.9.0",
+    "npm": "^6.2.0",
     "slick-carousel": "^1.8.1"
   }
 }

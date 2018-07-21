@@ -48,7 +48,9 @@
     {% for item in cards %}
     <a class="cards__link" href="{{item.link}}">
       <div class="cards__item">
-        <img src="{{item.img}}" width="134" height="117" alt="">
+        <div class="cards__media">
+          <div class="cards__img" style="background-image: url({{item.img}})"></div>
+        </div>
         <h4 class="cards__title">{{item.title}}</h4>
         <p>{{item.discr}}</p>
         <div class="cards__revievs">

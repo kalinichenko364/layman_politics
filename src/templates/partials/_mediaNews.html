@@ -22,16 +22,18 @@
 %}
 
 <div class="mediaNews">
-  <h3 class="mediaNews__title">
-    Hottest video
-  </h3>
+  <a class="mediaNews__link-title" href="#">
+    <h3 class="mediaNews__title">
+      Hottest video
+    </h3>
+  </a>
   <div class="mediaNews__list">
     {% for item in mediaNews %}
     <a class="mediaNews__link" href="{{item.video}}">
       <div class="mediaNews__item">
-        <div class="mediaNews__img">
-          <img class="mediaNews__img-pic" src="{{item.img}}" width="188" height="174" alt="">
-          <img class="mediaNews__img-play" src="img/play.png" alt="">
+        <div class="mediaNews__media">
+            <div class="mediaNews__img" style="background-image: url({{item.img}})"></div>
+            <img class="mediaNews__play-img" src="img/play.png" alt="">
         </div>
         <h4 class="mediaNews__item-title">{{item.title}}</h4>
         <p>{{item.discr}}
